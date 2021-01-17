@@ -15,7 +15,7 @@
 
 window.deleteSaveSlot = function (slotName) {
 	localStorage.removeItem(getStoragePrefix() + slotName);
-}</script><tw-passagedata pid="1" name="START" tags="Selection" position="312,189" size="200,200">Public Release 1
+}</script><tw-passagedata pid="1" name="START" tags="Selection" position="312,189" size="200,200">Public Release 69
 (current-date:)
 (size: 2)[Welcome to my little rpg thing]
 
@@ -73,7 +73,7 @@ $mana/$maxmana Mana
 
 [[Examine self-&gt;Examine self spdier]]</tw-passagedata><tw-passagedata pid="10" name="Examine the spider" tags="" position="1091,593" size="100,100">The big yellow spider has $spiderhealth/7 Health
 
-[[Back to spider]]</tw-passagedata><tw-passagedata pid="11" name="Use Fireball" tags="" position="1341,676" size="100,100">{(set: $latestdamage to (random: 1, 5))You use fireball on the spider to deal $latestdamage Damage. (set: $spiderhealth to $spiderhealth - $latestdamage)(if: $spiderhealth &lt; 1)[(goto: &quot;Afterspider&quot;)]}
+[[Back to spider]]</tw-passagedata><tw-passagedata pid="11" name="Use Fireball" tags="" position="1341,676" size="100,100">{(set: $latestdamage to (random: 1, 5))You use fireball on the spider to deal $latestdamage Damage. (set: $spiderhealth to $spiderhealth - $latestdamage)(if: $spiderhealth &lt; 1)[(goto: &quot;after spooder&quot;)]}
 
 [[Examine the spider]]
 
@@ -140,7 +140,7 @@ The bartender points to a table with a full party
 &quot;Oh of course, are you happy to be payed 5 gold a hour?&quot;
 
 [[Yes-&gt;get payed 5 gold per hour]]
-[[No-&gt;Refuse pay]]</tw-passagedata><tw-passagedata pid="21" name="Don&#39;t give him money" tags="" position="1593,1503" size="100,100">(goto: &quot;coming soon&quot;)</tw-passagedata><tw-passagedata pid="22" name="coming soon" tags="" position="434.6666666666666,431.3333333333333" size="100,100">The rest of the story is coming soon.
+[[No-&gt;Refuse pay]]</tw-passagedata><tw-passagedata pid="21" name="Don&#39;t give him money" tags="" position="1593,1503" size="100,100">(goto: &quot;coming soon&quot;)</tw-passagedata><tw-passagedata pid="22" name="coming soon" tags="" position="434,431" size="100,100">The rest of the story is coming soon.
 
 //&#39;&#39;Restarting Game
 In 5 Seconds&#39;&#39;//
@@ -159,7 +159,7 @@ $mana/$maxmana Mana
 
 (link: &quot;Inventory&quot;)[(if: $haslightgrimouire is true)[Gold:$gold]]
 
-[[link]]</tw-passagedata><tw-passagedata pid="29" name="bad inventory stuff qnad fgchvjbknl" tags="" position="1605,1044.6666666666665" size="100,100">$health/$maxhealth Health}
+[[link]]</tw-passagedata><tw-passagedata pid="29" name="bad inventory stuff qnad fgchvjbknl" tags="" position="1605,1044" size="100,100">$health/$maxhealth Health}
 $mana/$maxmana Mana
 (link: &quot;Skills&quot;)[
 {(if: $hasfireball is true)[(text-colour:red)[Fireball] DMG: 1-5 Mana use: 10]}
